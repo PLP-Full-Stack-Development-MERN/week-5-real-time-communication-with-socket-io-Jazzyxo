@@ -1,0 +1,105 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fc;
+  padding: 20px;
+  color: #333;
+}
+
+/* Title */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Room Input Section */
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Note Editing Textarea */
+textarea {
+  width: 80%;
+  height: 300px;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: none;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: #3498db;
+}
+
+/* Current Users Section */
+h2 {
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: #555;
+}
+
+li {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+/* Flexbox Layout for the App */
+.App > div {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.App button {
+  width: 250px;
+  margin-top: 20px;
+}
